@@ -6,7 +6,6 @@
     <title>Fancy Badminton League</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans|Lato' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/bootstrap.js" type="application/javascript"></script>
 
@@ -25,7 +24,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Fancy Badminton</a>
+                    <a class="navbar-brand" href="index.html">Fancy Badminton</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -43,67 +42,92 @@
             <!--/.nav-collapse -->
             <div class="container">
                 <div class="jumbotron">
+                    <h2>$199 for a Full Year of Membership. Limited Time Offer!</h2>
                     <form class="form-horizontal" role="form">
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Full Name</label>
+                            <label for="inputEmail" class="col-sm-2 control-label">Full Name</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" id="inputFullName" placeholder="Full Name">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Address</label>
+                            <label for="inputAddress" class="col-sm-2 control-label">Address</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputFullName" placeholder="Full Name">
-                            </div>
-                        </div>        
-                        <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">City</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputFullName" placeholder="Full Name">
-                            </div>
-                        </div>     
-                        <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Province</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputFullName" placeholder="Full Name">
-                            </div>
-                        </div>       
-                        <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Full Name</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputFullName" placeholder="Full Name">
-                            </div>
-                        </div>                        
-                        <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                <input type="text" class="form-control" id="inputAddress" placeholder="Address">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Credit Card Type</label>
+                            <label for="inputCity" class="col-sm-2 control-label">City</label>
                             <div class="col-sm-10">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                <input type="text" class="form-control" id="inputCity" placeholder="City">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Credit Card Number</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            <label for="inputProvince" class="col-sm-2 control-label">Province</label>
+                            <div class="col-sm-10 selectContainer" class="form-control" id="inputProvince">
+                                <select id="inputProvince" class="form-control">
+                                    <option value="Alberta">Alberta</option>
+                                    <option value="British Columbia">British Columbia</option>
+                                    <option value="Manitoba">Manitoba</option>
+                                    <option value="New Brunswick">New Brunswick</option>
+                                    <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                                    <option value="Northwest Territories">Northwest Territories</option>
+                                    <option value="Nova Scotia">Nova Scotia</option>
+                                    <option value="Nunavut">Nunavut</option>
+                                    <option value="Ontario">Ontario</option>
+                                    <option value="Prince Edward Island">Prince Edward Island</option>
+                                    <option value="Quebec">Quebec</option>
+                                    <option value="Saskatchewan">Saskatchewan</option>
+                                    <option value="Nova Scotia">Yukon</option>
+                                </select>
                             </div>
-                        </div>       
+                        </div>
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Name on Card</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            <label for="inputPostalCode" class="col-sm-2 control-label">Postal Code</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="inputPostalCode" placeholder="Postal Code">
                             </div>
-                        </div>               
+                        </div>
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Security Code</label>
+                            <label for="inputPassword" class="col-sm-2 control-label">Password</label>
                             <div class="col-sm-10">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
                             </div>
-                        </div>                        
+                        </div>
+                        <div class="form-group">
+                            <label for="inputCreditCardType" class="col-sm-2 control-label">Credit Card Type</label>
+                            <div class="col-sm-10 selectContainer">
+                                <select id="inputCreditCardType" class="form-control">
+                                    <option value="volvo">American Express</option>
+                                    <option value="saab">Visa</option>
+                                    <option value="mercedes">Mastercard</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputCreditCardNumber" class="col-sm-2 control-label">Credit Card Number</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="inputCreditCardNumber" placeholder="Credit Card Number">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputNameOnCard" class="col-sm-2 control-label">Name on Card</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputNameOnCard" placeholder="Name on Card">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputSecurityCode" class="col-sm-2 control-label">Security Code</label>
+                            <div class="col-sm-4">
+                                <input type="password" class="form-control" id="inputSecurityCode" placeholder="Security Code">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputExpDate" class="col-sm-2 control-label">Expiration Date</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="inputExpDate" placeholder="MM/YY">
+                            </div>
+                        </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
                                 <button type="submit" class="btn btn-default">Sign in</button>
